@@ -1,0 +1,7 @@
+1) List 3 tasks that can be performed with native SQL but are hard or impossible with JPQL.
+- Database-specific features like recursive CTEs (e.g., WITH RECURSIVE) for hierarchical traversals.
+- Advanced window-function analytics (ROW_NUMBER, LAG, PERCENTILE_CONT) with vendor-specific options.
+- Calling stored procedures/functions with complex OUT params and leveraging optimizer/index hints.
+
+2) Explain why you might prefer using native SQL over JPQL in real-world projects.
+Native SQL gives exact control over generated queries, lets teams use database-specific performance features, and is often required for complex reporting/analytics queries that JPQL cannot express cleanly. It can also make tuning easier when DBAs need predictable SQL that matches execution plans in production.

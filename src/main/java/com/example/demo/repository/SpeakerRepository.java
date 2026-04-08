@@ -1,0 +1,7 @@
+package com.example.demo.repository;
+
+import com.example.demo.Entity.Speaker;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface SpeakerRepository extends JpaRepository<Speaker, Long> {
+}
